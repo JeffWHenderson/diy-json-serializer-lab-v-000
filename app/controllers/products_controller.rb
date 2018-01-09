@@ -1,12 +1,12 @@
 class ProductsController < ApplicationController
-  before_action :current_product
+  before_action :current_product, only: [:show]
 
   def index
     @products = Product.all
   end
 
   def show
-  
+
   end
 
   def inventory
