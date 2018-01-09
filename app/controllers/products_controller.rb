@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params["id"])
+    current_product
   end
 
   def inventory
