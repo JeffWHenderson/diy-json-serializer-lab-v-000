@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.find(params["id"])
     render plain: "test test test"
   end
 
