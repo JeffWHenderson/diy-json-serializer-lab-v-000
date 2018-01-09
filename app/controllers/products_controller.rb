@@ -22,6 +22,10 @@ class ProductsController < ApplicationController
     redirect_to products_path
   end
 
+  def data
+    render :plain :'test test test'
+  end
+
   private
 
   def product_params
