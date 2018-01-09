@@ -23,6 +23,7 @@ class ProductsController < ApplicationController
   end
 
   def data
+    @product = Product.find(params["id"])
     render plain: 'test test test'
   end
 
