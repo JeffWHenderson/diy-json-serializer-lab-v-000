@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
   end
 
   def data
-    render :plain :'test test test'
+    render plain: 'test test test'
   end
 
   private
