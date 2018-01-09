@@ -36,7 +36,7 @@ class ProductsController < ApplicationController
   private
 
   def current_product
-    @product = Product.find(params["id"])
+    @product = Product.find(2)
   end
 
   def product_params
