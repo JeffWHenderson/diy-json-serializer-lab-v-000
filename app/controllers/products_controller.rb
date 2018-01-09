@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
 
   def data
     @product = Product.find(params["id"])
-    render plain: "#{@product.id}"
+    render json: "#{@product.id}"
   end
 
   private
