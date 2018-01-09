@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :current_product, only: [:show]
+  before_action :current_product, only: [:show, :data]
 
   def index
     @products = Product.all
@@ -29,7 +29,6 @@ class ProductsController < ApplicationController
   end
 
   def data
-    @product = Product.find(params["id"])
     render json: "#{ProductSerializer.serialize(@product)}"
   end
 
