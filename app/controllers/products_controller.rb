@@ -1,12 +1,12 @@
 class ProductsController < ApplicationController
   before_action :current_product
-  
+
   def index
     @products = Product.all
   end
 
   def show
-    current_product
+  
   end
 
   def inventory
