@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  before_action :current_product
+  
   def index
     @products = Product.all
   end
