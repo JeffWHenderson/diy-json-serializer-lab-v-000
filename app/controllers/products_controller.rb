@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params["id"])
-    render plain: "test test test"
+    render plain: "#{@product.id}"
   end
 
   def inventory
